@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms Demo</title>
+  </head>
+  <body>
+    <h1>Forms Demo</h1>
+    <button>Formun Dışında</button>
+    <form action="/food">
+      <button>Lütfen Bu Formu Gönderme</button>
+      <label for="username">Kullanıcı Adı Giriniz</label>
+      <input id="username" placeholder="Kullanıcı Adı" />
+      <label for="password">Şifre Giriniz</label>
+      <input id="password" placeholder="Password" />
+      <button>Submit</button>
+      <input type="submit" value="Tıklayın" />
+    </form>
+    <form action="https://www.google.com/search">
+      <label for="search">Search Goggle</label>
+      <input type="text" id="search" name="q" />
+      <button>Googleda Ara</button>
+    </form>
+    <h2>Daha fazla input çeşidi</h2>
+    <form action="/birds">
+      <input type="checkbox" name="tos" id="agree" checked />
+      <label for="agree">Kabul ediyorum</label>
+      <p>
+      <label for="xs">XS:</label>
+      <input type="radio" name="size" id="xs" value="xs" />
+      <label for="s">S:</label>
+      <input type="radio" name="size" id="s" value="s" />
+      <label for="m">M:</label>
+      <input type="radio" name="size" id="m" value="m" />
+    </p>
+    <p>
+      <label for="animal">Favori hayvanınızı seçin...</label>
+      <select name="animal" id="animal"
+      <option value="fish">Balık</option>
+      <option value="cat">Kedi</option>
+      <option value="bird">Kuş</option>
+    </select>
+    </p>
+    <p>
+      <label for="cheese">Peynir Miktarı</label>
+      <input type="range" name="cheese_level" id="cheese" min="1" max="10" />
+    </p>
+    <p>
+      <label for="note">Özel İstek</label>
+      <textarea name="note" id="note" cols="30" rows="10" placeholder="Buraya İsteklerinizi Yazınız..."></textarea>
+    </p>
+
+      <button>Yolla</button>
+      </form>
+      <h2>Validations</h2>
+   <form action="/dummy"></form>
+   <p>
+<label for="first">İsim Giriniz</label>
+<input type="text" name="first" id="first" required  minleght="3" maxlenght="15"/> 
+</p>
+
+<button>Submit</button>
+
+  </body>
+</html>
